@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from Registro_Compras.views import tabla
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$',tabla, name='index'),
 ]
